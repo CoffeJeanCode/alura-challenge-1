@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apliacion de Cifrado | Alura</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/Logo.png" alt="Logo de Alura" />
+    </header>
+    <main class="wrapper">
+      <section class="form">
+        <textarea
+          class="form__text"
+          placeholder="Ingrese el texto aqui"
+          id="text"
+          autocomplete="false"
+          autofocus
+        ></textarea>
+        <p class="form__advisehoberlai mufatndober">
+          <img src="./assets/exclamation-icon.png" alt="!" />
+          <span>Solo letras minúsculas y sin acentos</span>
+        </p>
+        <div class="form__button__group">
+          <button
+            class="form__button__encrypt"
+            id="button-encrypt"
+            type="submit"
+          >
+            Encriptar
+          </button>
+          <button class="form__button__decrypt" id="button-decrypt">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="result" id="result-wrapper">
+        <div class="result__text" id="result-text">
+          <img src="./assets/not_text.png" alt="" />
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <button class="result__button__copy" id="button-copy">Copiar</button>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
